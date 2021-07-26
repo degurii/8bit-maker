@@ -1,20 +1,34 @@
-<!DOCTYPE html>
-<html>
-<title>8bit-maker</title>
-<link rel="stylesheet" href="main.css">
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>8-bit Music Maker</title>
+</head>
 <body>
+<template id="app">
+    <div class="music-maker">
+        <div class="music-maker__btn music-maker__btn--play">Play ▶</div>
+        <div class="music-maker__sheet-container">
+            <div class="music-maker__keys" data-component="music-maker-keys"></div>
+            <div class="music-maker__sheet" data-component="music-maker-sheet"></div>
+        </div>
+        <div class="volume-controller" data-component="volume-controller"></div>
+    </div>
+</template>
+<template id="volume-controller">
+    <label class="volume-controller__label">volume
+        <input type="range" class="volume-controller__input" min="0" max="1" step="0.1">
+    </label>
+</template>
 
-	<div class="pannel"> </div>
+<div id="root">
+    <div data-component="app"></div>
+</div>
 
-	<label class="volume-controller">volume
-		<input type="range" class="volume-controller__input" min="0" max="1" step="0.1">
-	</label>
-
-	<button id="start">start</button>
-	<button id="stop">stop</button>
-
-	<script src="app.js"></script>
+<script type="module" src="src/index.js"></script>
 </body>
-
 </html>

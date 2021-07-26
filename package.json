@@ -1,0 +1,27 @@
+{
+  "name": "8bit-music-maker",
+  "version": "1.0.0",
+  "description": "8비트 생성기를 웹으로 구현해보자",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/degurii/8bit-maker.git"
+  },
+  "author": "degurii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/degurii/8bit-maker/issues"
+  },
+  "homepage": "https://github.com/degurii/8bit-maker#readme",
+  "dependencies": {
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9"
+  },
+  "devDependencies": {
+    "parcel": "*"
+  }
+}
