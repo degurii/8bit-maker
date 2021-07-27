@@ -1,7 +1,8 @@
-import {KEYS} from '../../constants';
+import {KEYS, COLORS_FOR_PITCH} from '../../constants';
 
 const getKeyElement = key => {
     const newKey = document.createElement('div');
+
     newKey.className = 'music-maker__key';
     newKey.textContent = key;
 

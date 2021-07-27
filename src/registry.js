@@ -7,7 +7,6 @@ const renderWrapper = component => {
 
         [...childComponents].forEach(target => {
             const name = target.dataset.component;
-            console.log('name:',name);
             const child = registry[name];
             if(!child) return;
             target.replaceWith(child(target, state, events));
