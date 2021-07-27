@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/degurii/8bit-maker#readme",
   "dependencies": {
+    "immer": "^9.0.5",
     "redux": "^4.1.0",
     "redux-devtools-extension": "^2.13.9"
   },
